@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .navbar{
+            
+            height: auto;
+            width: 95%;
+            margin-left: 25px;
+            border: 1px solid black;
+            background-color: rgb(99, 228, 194);
+            position: fixed;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-between;
+           
+        }
+        .rightNav{
+           
+            margin-top: 10px;
+            height: auto;
+          
+            
+        }
+      
+    a{
+            margin-right: 30px;
+            padding: 2px 2px;
+            text-decoration: none;
+            
+        }
+     @media(max-width:798.992px)
+        { 
+     .rightNav{
+             height: auto;
+             display: flex;
+          }
+          
+       }
+       @media(min-width:798.992px) and (max-width:2140px)
+        { 
+            .rightNav{
+           
+            height: auto;
+            display: flex;
+          }
+           .a{
+            margin-left: 10px;
+            padding: 2px 2px;
+            }
+       }
+    </style>
+</head>
+<body>
+  <div class="navbar">
+    <legend style="margin-top: 5px; margin-left: 15px;">FITNESS</legend>
+   <div class="rightNav"> <a href="fitness.html">Home</a>
+    <a href="1st.html">About</a>
+    <a href="2nd.html">Blog</a>
+    <a href="contact.html">Contact us</a>
+</div>
+</div>
+<br><br><br><br>
+    <form>
+        <fieldset style="border-color: rgb(204, 238, 238); box-shadow: 5px 5px 5px rgb(192, 222, 222); background-color: rgb(187, 187, 201);">
+          <legend style="color: rgb(10, 37, 34); font-weight: bold;">Contact Form</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="nam" placeholder="Full name...">
+        <br>
+        <label for="email">Email id</label>
+        <input type="email" placeholder="Example@.com">
+        <br>
+        <label for="phone">Mobile phone no.</label>
+        <input type="tel" id="phone" >
+        <br>
+        <label for="psw">Password:</label>
+        <input type="password" id="psw" name="password" placeholder="Your password..">
+        <br>
+        <label for="gender">Gender</label>
+        <br>
+        <label for="gender">Male</label>
+        <input type="radio" id="male" name="gender">
+        <label for="gender">Female</label>
+        <input type="radio" id="female" name="gender">
+        <label for="gender">Other</label>
+        <input type="radio" id="other" name="gender">
+        <br>
+        <label for="subject">Select your favourite player:</label>
+  
+        <select name="subject" id="subject">
+          <option value="player 1">player 1</option>
+          <option value="player 2">player 2</option>
+          <option value="player 3">player 3</option>
+        </select>
+        <br>
+        <label for="adr">Address:</label>
+        <input id="adr" name="adr" style="width:100%;height:150px;" placeholder="Your address.."></textarea>
+        <br>
+  
+        <input type="submit" id="register">
+      </form>
+    </fieldset>
+</body>
+</html>

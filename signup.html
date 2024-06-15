@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            
+            height: auto;
+            width: 98%;
+            margin-left: 25px;
+            border: 1px solid black;
+            background-color: rgb(99, 228, 194);
+            position: fixed;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-between;
+           
+        }
+        .rightNav{
+           
+            margin-top: 10px;
+            height: auto;
+          
+            
+        }
+      
+    a{
+            margin-right: 30px;
+            padding: 2px 2px;
+            text-decoration: none;
+            
+        }
+     @media(max-width:798.992px)
+        { 
+     .rightNav{
+             height: auto;
+             display: flex;
+          }
+          
+       }
+       @media(min-width:798.992px) and (max-width:2140px)
+        { 
+            .rightNav{
+           
+            height: auto;
+            display: flex;
+          }
+           .a{
+            margin-left: 10px;
+            padding: 2px 2px;
+            }
+       }
+        
+        .div1 {
+            margin: 100px 100px 100px 450px;
+            height: auto;
+            width: 200px;
+            border: 1px solid black;
+            box-shadow: 5px 15px 5px rgb(180, 173, 173) ; 
+            background-color: blanchedalmond;
+        }
+        #form{
+            padding-bottom: 5px;
+        }
+        form[id=form]{
+            margin:0px;
+            padding: 5px 15px 5px 15px;
+        }
+        input[class=cls]{
+            margin-top: 5px;
+            text-align: center;
+        }
+        input[type=submit]{ 
+            background-color: #09bfdf;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <legend style="margin-top: 5px; margin-left: 15px;">FITNESS</legend>
+       <div class="rightNav"> <a href="fitness.html">Home</a>
+        <a href="1st.html">About</a>
+        <a href="2nd.html">Blog</a>
+        <a href="contact.html">Contact us</a>
+    </div>
+    </div>
+    <div class="div1">
+        <form id="form">
+            
+              <legend style="color: #09bfdf;"><b>Sign Up</b></legend>
+            
+            <input type="text" id="name" name="nam" class="cls" placeholder="Enter Your name...">
+            <br>
+            <input type="password" id="psw" name="password" class="cls" placeholder="Your password..">
+            <br>
+            <input type="email" placeholder="Email" class="cls">
+            <br>
+            <input type="tel" id="Phone no." class="cls" placeholder="Phone No.">
+            <br>
+            <input type="date" style="padding: 1px 29px;" id="date" class="cls" placeholder="Date of Birth">
+            
+           <p>I agree to the TOS <input type="checkbox"></p>
+          
+            <input type="submit" style="padding: 1px 62px;" id="register">
+          </form>
+    </div>
+</body>
+</html>
