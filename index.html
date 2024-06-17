@@ -19,20 +19,35 @@
             justify-content: space-between;
            
         }
-        .rightNav{
+        .logo{
+            margin-top: 5px;
+            margin-left: 15px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .logo:hover{
+            transform: scale(1.05);
+        }
+        /* .rightNav{
            
             margin-top: 10px;
             height: auto;
           
             
-        }
+        } */
       
-    a{
+    a{       
+            margin-top: 10px;
+            height: auto;
             margin-right: 30px;
             padding: 2px 2px;
             text-decoration: none;
             
         }
+    a:hover{
+        color: goldenrod;
+    }
+        
      @media(max-width:798.992px)
         { 
             .navbar{
@@ -129,10 +144,23 @@
             }
         }
        
-      img{
+     .image img{
         width: 300px;
         height: 250px;
+        
+        box-shadow: 0 0 25px rgb(253, 254, 252);
+        cursor: pointer;
+        animation: floatImage 4s ease-in-out infinite;
+        transition: 0.4s ease;
       }  
+      .image img:hover {
+        box-shadow: 5px 10px 5px rgb(61, 116, 7);
+        box-shadow: 0px 5px 5px rgb(40, 116, 7);
+                      /* 5px 10px 20px rgb(61, 116, 9); */
+                     
+
+        
+      }
    
    .registerPanel {
        
@@ -175,7 +203,7 @@
 </head>
 <body style="margin: 0px;">
     <div class="navbar">
-        <legend style="margin-top: 5px; margin-left: 15px;">FITNESS</legend>
+        <legend class="logo">FITNESS</legend>
        <div class="rightNav"> <a href="index.html">Home</a>
         <a href="#about">About</a>
         <a href="#blog">Blog</a>
